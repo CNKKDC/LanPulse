@@ -18,15 +18,29 @@
  */
 
 /**
- * @file configure.h
- * @brief Implement the reading function of the configuration file.
+ * @file memory.h
  * @author kkdc <1557655177@qq.com>
  */
 
-#ifndef __CONFIGURE_H__
-#define __CONFIGURE_H__
+#ifndef __MEMORY_H__
+#define __MEMORY_H__
+
+void* safe_malloc(const size_t size);
+
+void* safe_relloc(void *ptr, const size_t size);
+
+void* safe_calloc(const size_t count, const size_t size);
+
+#define MALLOC_S(size) safe_malloc((size))
+
+#define RELLOC_S(ptr, size) safe_relloc((ptr), (size))
+
+#define CALLOC_S(count, size) safe_calloc((count), (size))
+
+#define FREE_S(ptr) do{ \
+    free((ptr)); \
+    ptr = NULL; \
+}while(0)
 
 
-
-
-#endif /* __CONFIGURE_H__ */
+#endif /* __MEMORY_H__ */

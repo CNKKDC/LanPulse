@@ -23,10 +23,10 @@
  * @author kkdc <1557655177@qq.com>
  */
 
-#ifndef DISCOVERY_COMMON_H
-#define DISCOVERY_COMMON_H
+#ifndef __DISCOVERY_COMMON_H__
+#define __DISCOVERY_COMMON_H__
 
-#include "autoconfig.h"
+#include "lanpulse_common.h"
 
 #define DISCOVERY_PORT 12345
 #define DISCOVER_MESSAGE "DISCOVER"
@@ -59,6 +59,8 @@ enum DiscoveryStatus{
 
 typedef enum DiscoveryStatus DiscoveryStatus;
 
+
+
 // 初始化网络库
 int init_network(void);
 // 清理网络库
@@ -66,4 +68,4 @@ void cleanup_network(void);
 // 平台无关的socket关闭
 void close_socket(SOCKET sock);
 
-#endif /* DISCOVERY_COMMON_H */
+#endif /* __DISCOVERY_COMMON_H__ */

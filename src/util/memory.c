@@ -18,15 +18,33 @@
  */
 
 /**
- * @file configure.h
- * @brief Implement the reading function of the configuration file.
+ * @file memory.c
  * @author kkdc <1557655177@qq.com>
  */
 
-#ifndef __CONFIGURE_H__
-#define __CONFIGURE_H__
+#include "util/memory.h"
 
 
+void* safe_malloc(const size_t size){
+    void *ptr = malloc(size);
+    if (ptr == NULL) {
+        printf("Out of memory!!");
+    }
+    return ptr;
+}
 
+void* safe_relloc(void *ptr, const size_t size){
+    void *ptr = relloc(ptr, size);
+    if (ptr == NULL) {
+        printf("Out of memory!!");
+    }
+    return ptr;
+}
 
-#endif /* __CONFIGURE_H__ */
+void* safe_calloc(const size_t count, const size_t size){
+    void *ptr = calloc(count, size);
+    if (ptr == NULL) {
+        printf("Out of memory!!");
+    }
+    return ptr;
+}

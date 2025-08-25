@@ -22,8 +22,8 @@
  * @author kkdc <1557655177@qq.com>
  */
 
-#ifndef LANPULSE_H
-#define LANPULSE_H
+#ifndef __LANPULSE_H__
+#define __LANPULSE_H__
 
 
-#endif /* LANPULSE_H */
+#endif /* __LANPULSE_H__ */

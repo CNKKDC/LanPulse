@@ -22,10 +22,10 @@
  * @author kkdc <1557655177@qq.com>
  */
 
-#ifndef DISCOVERY_H
-#define DISCOVERY_H
+#ifndef __DISCOVERY_H__
+#define __DISCOVERY_H__
 
-#include "discovery_common.h"
+#include "discovery/discovery_common.h"
 
 
-#endif /* DISCOVERY_H */
+#endif /* __DISCOVERY_H__ */
