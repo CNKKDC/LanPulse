@@ -52,6 +52,10 @@ Reviced data from multicast
 
 Rely data when Relay mode
 
+### 2.4 Lua support
+
+Modify sender and reviced message
+
 ## 3. Collection Layer
 
 ### 3.1 Message register
