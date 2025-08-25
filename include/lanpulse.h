@@ -18,9 +18,12 @@
  */
 
 /**
- * @file discovery.c
+ * @file lanpulse.h
  * @author kkdc <1557655177@qq.com>
  */
 
-#include "discovery/discovery.h"
+#ifndef LANPULSE_H
+#define LANPULSE_H
 
+
+#endif /* LANPULSE_H */

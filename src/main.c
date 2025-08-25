@@ -18,9 +18,10 @@
  */
 
 /**
- * @file discovery.c
+ * @file main.c
  * @author kkdc <1557655177@qq.com>
  */
 
-#include "discovery/discovery.h"
+int main(int argc, char** args){
 
+}

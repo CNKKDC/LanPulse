@@ -26,6 +26,8 @@
 #ifndef DISCOVERY_COMMON_H
 #define DISCOVERY_COMMON_H
 
+#include "autoconfig.h"
+
 #define DISCOVERY_PORT 12345
 #define DISCOVER_MESSAGE "DISCOVER"
 #define RESPONSE_PREFIX "ME<"
